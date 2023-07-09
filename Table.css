@@ -3,9 +3,9 @@ table{
     margin-top: 20px;
 }
  table, th, td {
-    border: 2px solid black;
     border-collapse: collapse;
     padding: 10px;
+    border-style: double;
 }
 th{
     text-align: center;
