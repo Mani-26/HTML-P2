@@ -1,0 +1,21 @@
+ol{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    color: black;
+    margin: 20px;
+    background-color: rgb(190, 238, 212);
+    text-transform: uppercase;
+}
+body{
+    margin: auto;
+    position: relative;
+}
+.h{
+    font-weight: 900;
+    padding-bottom: 30px;
+}
+.b{
+    font-weight: 500;
+    color: rgb(255, 174, 0);
+    text-transform: capitalize;
+}
