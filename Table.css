@@ -1,0 +1,22 @@
+table{
+    margin: auto;
+    margin-top: 20px;
+}
+ table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+th{
+    text-align: center;
+    background-color: rgb(13, 255, 13);
+    color: black;
+    font-weight: bolder;
+}
+td{
+    background-color: rgb(176, 241, 243);
+    text-align: center;
+}
+.last{
+    text-align: left;
+}
