@@ -19,3 +19,25 @@ body{
     color: rgb(255, 174, 0);
     text-transform: capitalize;
 }
+table{
+    margin: auto;
+    margin-top: 20px;
+}
+ table, th, td {
+    border-collapse: collapse;
+    padding: 10px;
+    border-style: double;
+}
+th{
+    text-align: center;
+    background-color: rgb(13, 255, 13);
+    color: black;
+    font-weight: bolder;
+}
+td{
+    background-color: rgb(176, 241, 243);
+    text-align: center;
+}
+.last{
+    text-align: left;
+}
