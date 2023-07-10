@@ -12,6 +12,12 @@
     color: burlywood;
     font-size: large;
 }
+.pho{
+    vertical-align: middle;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
 .container:hover{
     border-radius: 30px;
     padding: 30px;
