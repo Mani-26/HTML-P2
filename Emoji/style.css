@@ -1,0 +1,28 @@
+.start{
+    display: flex;
+    background-color: aqua;
+    padding: 1%;
+}
+.face{
+    display: flex;
+    justify-content: space-between;
+}
+.eye1, .eye2{
+    background-color: black;
+    margin: 60%;
+}
+
+.flex-container {
+    border-radius: 30%;
+    display: flex;
+    background-color: aqua;
+    padding: 10%;
+    width: 1%;
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }

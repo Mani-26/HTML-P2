@@ -1,0 +1,66 @@
+body {
+    background-image: url('../images/Nature.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.new {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.new1 {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.marquee {
+    font-weight: 900;
+    background-color: rgb(0, 255, 255, 0.6);
+    border-radius: 50% 0 50% 0;
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 1%;
+    padding: 0.5%;
+    font-size: larger;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 3px blue, -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.marquee:hover {
+    font-weight: 900;
+    background-color: rgba(0, 255, 255, 0.945);
+    border-radius: 50% 0 50% 0;
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 1%;
+    padding: 0.5%;
+    font-size: larger;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 3px 3px 3px gold, -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: 3px 3px 3px red, -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+img {
+    width: 60%;
+    height: 60%;
+    border-radius: 0% 25%;
+}
+
+.left {
+    padding: 10%;
+    width: 20%;
+    margin-left: 5%;
+    margin-right: auto;
+    border: 3px solid brown;
+}
+
+.ri8 {
+    padding: 10%;
+    width: 20%;
+    margin-right: 5%;
+    margin-left: auto;
+    border: 3px solid brown;
+}
