@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="javaScript.js"></script>
+</head>
+
+<body>
+        <p id="demo" style="color: black;">hi</p>
+        <!-- change content -->
+        <button type="button" onclick="document.getElementById('demo').innerHTML='Hello Mani'">Click</button>
+        <!-- change css -->
+        <button type="button" onclick="document.getElementById('demo').style.fontSize='34px'">Click</button>
+        <!-- change display property -->
+        <button type="button" onclick="document.getElementById('demo').style.display='none'">Click</button>
+        <button type="button" onclick="document.getElementById('demo').style.display='block'">Click</button>
+        <!-- using script tag -->
+        <script>
+            document.getElementById('demo').style.color = 'blue';
+        </script>
+        <button type="button" onclick="myf()">Click me</button>
+        <button type="button" onclick="mydivi()">Click me</button>
+    
+</body>
+
+</html>
