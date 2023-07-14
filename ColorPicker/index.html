@@ -1,44 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Color Picker</title>
+    <link rel="icon" href="../images/apple-touch-icon.png" type="image/x-icon">
+
 </head>
+
 <body>
-  <script>alert("DON'T TOUCH ME😈! IF SO YOUR SYSTEM WILL BE HACKED🙈")</script>
+    <audio id="audio" preload="auto" loop>
+        <source src="../Audio/leo.mp3"></source>
+    </audio>
+    <script>alert("DON'T TOUCH ME😈! IF SO YOUR SYSTEM WILL BE HACKED🙈")</script>
 </body>
 <script>
     function getRandomColor() {
-    var letters = '0123456789ABCDEF';
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
     }
-    return color;
-  }
-  function getRandomColor1() {
-    var letters = '0123456789ABCDEF';
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
+    function getRandomColor1() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
     }
-    return color;
-  }
 
-const body=document.querySelector('body');
-document.addEventListener('click',function () {
-body.style.backgroundColor=getRandomColor();
+    const body = document.querySelector('body');
+    document.addEventListener('click', function () {
+        body.style.backgroundColor = getRandomColor();
 
+    });
+
+    
+document.body.addEventListener('click', function() {
+  var audio = new Audio('beep.mp3');
+  audio.play();
 });
-// const div=document.querySelector('.new');
-// document.addEventListener('click',function () {
-// body.style.backgroundColor=getRandomColor();
+   
 
-// });
 
-  
- 
+
 </script>
+
 </html>
