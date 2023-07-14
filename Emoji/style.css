@@ -1,28 +1,211 @@
-.start{
-    display: flex;
-    background-color: aqua;
-    padding: 1%;
-}
-.face{
-    display: flex;
-    justify-content: space-between;
-}
-.eye1, .eye2{
-    background-color: black;
-    margin: 60%;
+@keyframes changeColor {
+    0% {background-color: rgb(255, 0, 0);}
+    10% {background-color: rgb(255, 123, 0);}
+    20% {background-color: rgb(251, 255, 123);}
+    30% {background-color: rgb(0, 255, 0);}
+    40% {background-color: rgb(0, 255, 123);}
+    50% {background-color: rgb(123, 255, 255);}
+    60% {background-color: rgb(0, 0, 255);}
+    70% {background-color: rgb(0, 123, 255);}
+    80% {background-color: rgb(123, 255, 255);}
+    90% {background-color: rgb(255, 0, 85);}
+    100% {background-color: rgb(255, 0, 0);}
 }
 
-.flex-container {
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    animation: changeColor .9s infinite;
+}
+
+body {
+    background: turquoise;
+}
+
+.moonji {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    background: yellow;
+    border-radius: 50%;
+    margin: auto;
+    border: 2px solid black;
+
+
+}
+
+.kannu1 {
+    height: 70px;
+    width: 50px;
+    position: absolute;
+    background: rgb(245, 245, 245);
+
+    border-radius: 50%;
+    left: 60px;
+    top: 70px;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+.kannu2 {
+    height: 70px;
+    width: 50px;
+    position: absolute;
+    background: rgb(245, 245, 245);
+    border-radius: 50%;
+    left: 190px;
+    top: 70px;
+    border: 3px solid rgb(0, 0, 0);
+
+}
+
+.karuvili1 {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+    left: 11px;
+    top: 17px;
+    border: 3px solid black;
+
+}
+
+.karuvili2 {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+    left: 11px;
+    top: 17px;
+    border: 3px solid rgb(0, 0, 0);
+
+}
+
+.vaai {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    border: 7px solid transparent;
+    border-bottom: 10px solid rgb(243, 8, 8);
+    border-radius: 90%;
+    content: "";
+    top: -25%;
+    left: 45px;
+border-top: 1px solid black;
+}
+
+.mooku {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    /* border-bottom: 60px solid rgb(243, 8, 8); */
+    border-radius: 0% 0% 50% 50%;
+    content: "";
+    top: 47%;
+    background-color: rgb(255, 0, 0);
+    left: 135px;
+    border: 1px solid black;
+}
+
+.kaadhu1 {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    content: "";
+    background-color: rgb(0, 255, 21);
+    border-radius: 50%;
+    top: 20px;
+    z-index: -1;
+    left: -10px;
+    border: 2px solid black;
+
+}
+
+.kaadhu2 {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    content: "";
+    background-color: rgb(0, 255, 21);
+    border-radius: 50%;
+    top: 20px;
+    z-index: -1;
+    border: 2px solid black;
+
+    right: -10px;
+}
+
+.vayiru {
+    position: absolute;
+    width: 190px;
+    height: 300px;
+    content: "";
     border-radius: 30%;
-    display: flex;
-    background-color: aqua;
-    padding: 10%;
-    width: 1%;
-  }
-  
-  .flex-container > div {
-    background-color: #f1f1f1;
-    margin: 10px;
-    padding: 20px;
-    font-size: 30px;
-  }
+    background-color: burlywood;
+    top: 80%;
+    left: 18%;
+    z-index: -1;
+    border: 2px solid black;
+
+}
+
+.kai1 {
+    position: absolute;
+    width: 150px;
+    height: 70px;
+    content: "";
+    background-color: rgb(0, 255, 21);
+    border-radius: 30px;
+    top: 280px;
+    z-index: -2;
+    left: -20px;
+    border: 2px solid black;
+}
+
+.kai2 {
+    position: absolute;
+    width: 150px;
+    height: 70px;
+    content: "";
+    background-color: rgb(0, 255, 21);
+    border-radius: 30px;
+    top: 280px;
+    z-index: -2;
+    right: -20px;
+    border: 2px solid black;
+}
+
+.kal1 {
+    position: absolute;
+    width: 150px;
+    height: 70px;
+    content: "";
+    background-color: rgb(0, 255, 21);
+
+    border-radius: 30px;
+    top: 500px;
+    z-index: -2;
+    transform: rotate(-55deg);
+    left: 10px;
+    border: 2px solid black;
+}
+
+.kal2 {
+    position: absolute;
+    width: 150px;
+    height: 70px;
+    content: "";
+    background-color: rgb(0, 255, 21);
+    border-radius: 30px;
+    top: 500px;
+    z-index: -2;
+    transform: rotate(55deg);
+    right: 10px;
+    border: 2px solid black;
+}

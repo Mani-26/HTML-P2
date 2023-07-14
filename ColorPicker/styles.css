@@ -2,20 +2,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 12%;
 }
-button{
-    border-radius: 30px;
-    padding: 10px;
-    border: 3px;
-    border-style: solid;
-}
-button:hover{
-    border-radius: 30px;
-    padding: 10px 25px;
-    border: 7px;
-    border-style: double;
-}
-.top{
-    padding: 20%;
-    background-color: #00ffff;
+.new    {
+    padding: 10%;
+    /* background-color: #00ffff; */
 }

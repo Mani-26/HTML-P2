@@ -7,9 +7,7 @@
     <title>Color Picker</title>
 </head>
 <body>
-  <div class="new">
-    <button>Click Me</button></div>
-
+  <script>alert("DON'T TOUCH ME😈! IF SO YOUR SYSTEM WILL BE HACKED🙈")</script>
 </body>
 <script>
     function getRandomColor() {
@@ -18,16 +16,27 @@
     for (var i = 0; i < 6; i++) {
       color += letters[Math.floor(Math.random() * 16)];
     }
-    alert(color);
+    return color;
+  }
+  function getRandomColor1() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
     return color;
   }
 
-  // const btn= document.querySelector('button');
-const body=document.querySelector('.new');
+const body=document.querySelector('body');
 document.addEventListener('click',function () {
 body.style.backgroundColor=getRandomColor();
 
 });
+// const div=document.querySelector('.new');
+// document.addEventListener('click',function () {
+// body.style.backgroundColor=getRandomColor();
+
+// });
 
   
  
