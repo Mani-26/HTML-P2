@@ -5,14 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../images/apple-touch-icon.png" type="image/x-icon">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Anime</title>
 </head>
 <body>
+     <audio id="audio" preload="auto" loop>
+        <source src="../Audio/shinchan dialogue.mp3"></source>
+    </audio>
     <div class="str">
     <marquee class="marquee" direction="left" scrollamount="5">Shinchan </marquee>
     <div class="container">
         <h1>shinchan's family</h1>
+        <div class="top">
         <table>
             <tr><td><a href="https://crayonshinchan.fandom.com/wiki/Misae_Nohara"><img style="border-radius: 0px 30px 0px 30px;" loading="lazy" src="../images/DK-15.jpg" alt=""></a></td>
             <td><a href="https://crayonshinchan.fandom.com/wiki/Hiroshi_Nohara"><img style="border-radius: 0px 30px 0px 30px;" loading="lazy" src="../images/P.jpg" alt=""></a></td>
@@ -20,7 +25,9 @@
             <td><a href="https://crayonshinchan.fandom.com/wiki/Shiro"><img style="border-radius: 0px 30px 0px 30px;" loading="lazy" src="../images/Shiro.jpg" alt=""></a></td>
             <td><a href="https://crayonshinchan.fandom.com/wiki/Himawari_Nohara"><img style="border-radius: 0px 30px 0px 30px;" loading="lazy" src="../images/280px-Himawari.png" alt=""></a></td></tr>
         </table>
+        </div>
         <h1>Shinchan's friends</h1>
+        <div class="bot">
         <table>
             <tr><td><a href="https://crayonshinchan.fandom.com/wiki/Toru_Kazama"><img loading="lazy" src="../images/Kazama.png" style="border-radius: 0px 30px 0px 30px;" alt=""></a></td>
             <td><a href="https://crayonshinchan.fandom.com/wiki/Nene_Sakurada"><img style="border-radius: 0px 30px 0px 30px;" loading="lazy" src="../images/Pennt.png" alt=""></a></td>
@@ -28,7 +35,26 @@
             <td><a href="https://crayonshinchan.fandom.com/wiki/Bo_Suzuki"><img style="border-radius: 0px 30px 0px 30px;" loading="lazy" src="../images/Bo.png" alt=""></a></td>
             <td><a href="https://crayonshinchan.fandom.com/wiki/Bo_Suzuki"><img style="border-radius: 0px 30px 0px 30px;" loading="lazy" src="../images/Masao.png" alt=""></a></td></tr>
         </table>
+        </div>
+
     </div>
     </div>
+    <script>
+            
+        var beepOne = $("#audio")[0];
+        $(".top").mouseenter(function() {
+        beepOne.play();
+    });
+    $(".top").mouseleave(function() {
+        beepOne.pause();
+    });
+     $(".bot").mouseenter(function() {
+        beepOne.play();
+    });
+    $(".bot").mouseleave(function() {
+        beepOne.pause();
+    });
+    
+    </script>
 </body>
 </html>
