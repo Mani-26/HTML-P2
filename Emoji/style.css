@@ -163,7 +163,8 @@ body {
     background: turquoise;
     animation: changeColor 2s infinite;
 content: "";
-
+height: 100%;
+width: 100%;
 }
 
 
