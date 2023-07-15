@@ -12,6 +12,8 @@
 <body>
     <h1>Let's DaNCe</h1>
     <h2>Increase the Sounds</h2>
+    <h3>First</h3>
+    <h2><button id="hideButton">Let's Party</button></h2>
     <div id="hoverDiv">
         <div class="moonji">
             <div class="kad1"></div>
@@ -47,19 +49,27 @@
     hoverDiv.addEventListener('mouseleave', function () {
         audio.pause();
     });
-document.addEventListener('DOMContentLoaded', function() {
-    var audio = new Audio('../Audio/leo.mp3');
+    document.addEventListener('DOMContentLoaded', function () {
+        var audio = new Audio('../Audio/leo.mp3');
+        var hoverDiv = document.getElementById('hoverDiv');
+
+        hoverDiv.addEventListener('mouseenter', function () {
+            audio.play();
+        });
+
+
+        hoverDiv.addEventListener('mouseleave', function () {
+            audio.pause();
+        });
+    });
+
+    var hideButton = document.getElementById('hideButton');
     var hoverDiv = document.getElementById('hoverDiv');
 
-    hoverDiv.addEventListener('mouseenter', function () {
-        audio.play();
+    hideButton.addEventListener('click', function () {
+        hoverDiv.classList.toggle('hide-content');
     });
 
-
-    hoverDiv.addEventListener('mouseleave', function () {
-        audio.pause();
-    });
-});
 </script>
 
 </html>

@@ -186,6 +186,53 @@ h2 {
     animation: changeColorH2 2s infinite;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+.hide-content {
+    display: none;
+  }
+  
+  #hideButton {
+    height: auto;
+    width: auto;
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+position: absolute;
+top: 50%;
+right: 5%;
+    animation: changeColor 1s infinite;
+    /* animation: changeColorH1 2s infinite; */
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+  
+  #hideButton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  #hideButton:active {
+    transform: scale(0.95);
+  }
+  
+  
+h3 {
+    width: 7%;
+    margin-left: -6%;
+    margin-top: 31%;
+    float: left;
+    text-align: center;
+    font-size: 40px;
+    animation: changeColorH2 2s infinite;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
 
 @keyframes changeColorH1 {
     0% {
@@ -560,6 +607,42 @@ h2 {
     background-color: rgb(255, 0, 0);
     left: 115px;
     border: 1px solid black;
+    
+}
+#hoverDiv:hover .mooku {
+    animation: mooku 1s infinite;
+}
+
+@keyframes mooku {
+    0% {
+        top: 50%;
+        /* left: 9px; */
+    }
+
+    25% {
+        top: 47%;
+        /* left: 7px; */
+
+    }
+
+    50% {
+        top: 50%;
+        /* left: 5px; */
+
+    }
+
+    75% {
+        top: 46%;
+        /* left: 7px; */
+
+    }
+
+    100% {
+        top: 50%;
+        /* left: 9px; */
+
+    }
+
 }
 
 .kaadhu1 {
