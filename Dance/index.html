@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/apple-touch-icon.png" type="image/x-icon">
+    <title>Emoji</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Let's DaNCe</h1>
+    <h2>Increase the Sounds</h2>
+    <div id="hoverDiv">
+        <div class="moonji">
+            <div class="kad1"></div>
+            <div class="kad2"></div>
+            <div class="kaadhu1"></div>
+            <div class="kaadhu2"></div>
+            <div class="kannu1">
+                <div class="karuvili1"></div>
+            </div>
+            <div class="kannu2">
+                <div class="karuvili2"></div>
+            </div>
+            <div class="vaai"></div>
+            <div class="mooku"></div>
+        </div>
+
+        <div class="vayiru"></div>
+        <div class="kai1"></div>
+        <div class="kai2"></div>
+        <div class="kal1"></div>
+        <div class="kal2"></div>
+    </div>
+</body>
+<script>
+    var audio = new Audio('../Audio/leo.mp3');
+    var hoverDiv = document.getElementById('hoverDiv');
+
+    hoverDiv.addEventListener('mouseenter', function () {
+        audio.play();
+    });
+
+
+    hoverDiv.addEventListener('mouseleave', function () {
+        audio.pause();
+    });
+document.addEventListener('DOMContentLoaded', function() {
+    var audio = new Audio('../Audio/leo.mp3');
+    var hoverDiv = document.getElementById('hoverDiv');
+
+    hoverDiv.addEventListener('mouseenter', function () {
+        audio.play();
+    });
+
+
+    hoverDiv.addEventListener('mouseleave', function () {
+        audio.pause();
+    });
+});
+</script>
+
+</html>
