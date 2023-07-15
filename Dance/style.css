@@ -176,6 +176,7 @@ h1 {
     animation: changeColorH1 2s infinite;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+
 h2 {
     width: 7%;
     margin-left: -4%;
@@ -186,21 +187,22 @@ h2 {
     animation: changeColorH2 2s infinite;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+
 .hide-content {
     display: none;
-  }
-  
-  #hideButton {
+}
+
+#hideButton {
     height: auto;
     width: auto;
     padding: 12px 24px;
     background-color: #4CAF50;
     color: white;
     border: none;
-position: absolute;
-top: 50%;
-right: 5%;
-    animation: changeColor 1s infinite;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    animation: changeColorB 1s infinite;
     /* animation: changeColorH1 2s infinite; */
     border-radius: 50px;
     font-size: 18px;
@@ -211,18 +213,63 @@ right: 5%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
-  }
-  
-  #hideButton:hover {
+}
+@keyframes changeColorB {
+    0% {
+        background-color: rgb(255, 0, 0);\
+   
+    }
+
+    10% {
+        background-color: rgb(255, 123, 0);
+    }
+
+    20% {
+        background-color: rgb(251, 255, 123);
+    }
+
+    30% {
+        background-color: rgb(0, 255, 0);
+    }
+
+    40% {
+        background-color: rgb(0, 255, 123);
+    }
+
+    50% {
+        background-color: rgb(123, 255, 255);
+    }
+
+    60% {
+        background-color: rgb(0, 0, 255);
+    }
+
+    70% {
+        background-color: rgb(0, 123, 255);
+    }
+
+    80% {
+        background-color: rgb(123, 255, 255);
+    }
+
+    90% {
+        background-color: rgb(255, 0, 85);
+    }
+
+    100% {
+        background-color: rgb(255, 0, 0);
+    }
+}
+#hideButton:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  }
-  
-  #hideButton:active {
+}
+
+#hideButton:active {
     transform: scale(0.95);
-  }
-  
-  
+}
+
+
 h3 {
     width: 7%;
     margin-left: -6%;
@@ -326,6 +373,53 @@ h3 {
     }
 }
 
+.par{
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: azure;
+    
+    right: 9%;
+    top: 58%
+
+}
+#hoverDiv:hover .par{
+    animation: par 1s infinite;
+
+}
+@keyframes par {
+    0% {
+        top: 58%;
+        left: 9px;
+    }
+
+    25% {
+        top: 60%;
+        left: 7px;
+
+    }
+
+    50% {
+        top: 58%;
+        left: 5px;
+
+    }
+
+    75% {
+        top: 60%;
+        left: 7px;
+
+    }
+
+    100% {
+        top: 58%;
+        left: 9px;
+
+    }
+
+}
 #hoverDiv {
     width: 55%;
     height: 100vh;
@@ -607,8 +701,9 @@ h3 {
     background-color: rgb(255, 0, 0);
     left: 115px;
     border: 1px solid black;
-    
+
 }
+
 #hoverDiv:hover .mooku {
     animation: mooku 1s infinite;
 }
@@ -678,7 +773,7 @@ h3 {
     content: "";
     border-radius: 30%;
     /* background-color: lightpink; */
-    background-image: linear-gradient(violet, indigo, blue,green,yellow,orange,red);
+    background-image: linear-gradient(violet, indigo, blue, green, yellow, orange, red);
     top: 40%;
     left: 36%;
     z-index: -1;
