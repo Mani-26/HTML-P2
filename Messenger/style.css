@@ -1,0 +1,257 @@
+body {
+    height: 80vh;
+    width: 150vh;
+    position: relative;
+    content: "";
+    background-image: linear-gradient(orange, rgb(188, 255, 88), yellow, greenyellow);
+    display: flex;
+    justify-content: center;
+    margin: 10vh auto;
+}
+
+.box {
+    height: 60vh;
+    width: 80vh;
+    content: "";
+    position: absolute;
+    background-color: lightsalmon;
+    border: 4px;
+    border-color: deeppink;
+    margin: 15vh 45vh;
+    border-style: double;
+    background-image: linear-gradient(lightcoral, lightgrey, lightgreen, lightsalmon);
+    box-shadow: 10px 10px 7px lightslategrey;
+    border-radius: 100px;
+}
+
+.box:hover {
+    height: 60vh;
+    width: 80vh;
+    content: "";
+    position: absolute;
+    background-color: lightsalmon;
+    border: 4px;
+    border-color: firebrick;
+    margin: 15vh 45vh;
+    border-style: double;
+    background-image: linear-gradient(lightcoral, lightgrey, lightgreen, lightsalmon);
+    box-shadow: 8px 8px 9px snow;
+    border-radius: 100px;
+}
+
+h1 {
+    margin: 0%;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.h1 {
+    position: absolute;
+    margin-top: -20vh;
+    margin-left: 15vh;
+    border-radius: 20%;
+    width: 50vh;
+    height: 7vh;
+    text-align: center;
+    color: aqua;
+}
+
+.box:hover .h1 {
+    font-size: 18px;
+    text-shadow: -1px 0 black, 0 1px black;
+    animation: changeColorH1 1.5s infinite;
+}
+
+@keyframes changeColorH1 {
+    0% {
+        color: rgb(255, 0, 0);
+    }
+
+    10% {
+        color: rgb(255, 123, 0);
+    }
+
+    20% {
+        color: rgb(251, 255, 123);
+    }
+
+    30% {
+        color: rgb(0, 255, 0);
+    }
+
+    40% {
+        color: rgb(0, 255, 123);
+    }
+
+    50% {
+        color: rgb(123, 255, 255);
+    }
+
+    60% {
+        color: rgb(0, 0, 255);
+    }
+
+    70% {
+        color: rgb(0, 123, 255);
+    }
+
+    80% {
+        color: rgb(123, 255, 255);
+    }
+
+    90% {
+        color: rgb(255, 0, 85);
+    }
+
+    100% {
+        color: rgb(255, 0, 0);
+    }
+}
+
+marquee {
+    width: 60vh;
+    margin-top: -10vh;
+    height: 5vh;
+    border-radius: 30px;
+    display: flex;
+    padding: 1vh;
+    font-size: 30px;
+    margin-left: 8vh;
+    box-shadow: 10px 10px 7px lightslategrey;
+    border: 3px solid lightsteelblue;
+    background-color: aquamarine;
+}
+
+.box:hover marquee {
+    width: 60vh;
+    margin-top: -11vh;
+    height: 6vh;
+    border-radius: 30px;
+    display: flex;
+    padding: 1vh;
+    font-size: 30px;
+    margin-left: 8vh;
+    box-shadow: 5px 5px 7px sandybrown;
+    border: 3px solid burlywood;
+    text-shadow: 1px 0 black, 0 -1px black;
+    font-size: 33px;
+    animation: marquee 3s infinite;
+}
+
+@keyframes marquee {
+    0% {
+        color: blue;
+    }
+
+    20% {
+        color: greenyellow;
+    }
+
+    40% {
+        color: orangered;
+    }
+
+    60% {
+        color: violet;
+    }
+
+    80% {
+        color: turquoise;
+    }
+
+    100% {
+        color: brown;
+    }
+}
+
+.inp {
+    position: absolute;
+    width: 50vh;
+    height: 5vh;
+    left: 15vh;
+    top: 10vh;
+    border: 3px solid brown;
+    padding: 0.2vh;
+    text-align: justify;
+    border-radius: 30px;
+}
+
+#message {
+    width: 45.6vh;
+    top: .5px;
+    left: 0px;
+    padding: 0% 2vh;
+    border-radius: 30px;
+    height: 4.7vh;
+    position: absolute;
+    font-size: 16px;
+    color: red;
+    text-shadow: 1px 0 black;
+
+}
+
+#message:hover {
+    text-shadow: 1px 0 black;
+    font-size: 18px;
+
+    background-image: linear-gradient(rgb(252, 125, 125), yellow);
+}
+
+.button {
+    position: absolute;
+    top: 25vh;
+    left: 20vh;
+}
+
+button {
+    border-radius: 30px;
+    height: 5vh;
+    width: 20vh;
+}
+
+.submit {
+    position: fixed;
+    left: 85vh;
+    background-color: lime;
+    top: 53vh;
+    z-index: 1;
+
+}
+
+.submit:hover {
+    height: 6vh;
+    width: 25vh;
+    top: 52.5vh;
+    left: 82vh;
+    z-index: 2;
+}
+
+.reset {
+    position: fixed;
+    left: 105vh;
+    top: 53vh;
+    z-index: 1;
+    background-color: red;
+}
+
+.reset:hover {
+    z-index: 2;
+    height: 6vh;
+    width: 25vh;
+    top: 52.5vh;
+    left: 103vh;
+}
+
+.out {
+    position: absolute;
+    left: 12.5vh;
+    top: 39vh;
+    height: 7vh;
+    width: 55vh;
+    border: 3px solid brown;
+    box-shadow: 10px 10px 7px lightslategrey;
+    font-size: 30px;
+}
+
+p {
+    margin: 3px 10px;
+}

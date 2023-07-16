@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messenger</title>
+    <link rel="icon" href="../images/apple-touch-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="box">
+        <div class="h1">
+            <h1>Message Jar</h1>
+        </div>
+        <marquee behavior="scroll" direction="left" scrollamount="8"> Put Your Message Inside</marquee>
+        <div class="inp">
+            <input type="text" name="message" id="message" placeholder="Drop Your Message Here...">
+        </div>
+        <div class="button">
+            <button type="submit" class="submit" onclick="getMessage()">Submit</button>
+            <button type="reset" class="reset" onclick="clrMessage()">Reset</button>
+        </div>
+        <div class="out">
+            <p id="out"></p>
+        </div>
+    </div>
+</body>
+<script>
+    const messageInput = document.getElementById("message");
+    function getMessage() {
+        document.getElementById("out").innerHTML = messageInput.value;
+    }
+    function clrMessage() {
+        messageInput.value = "";
+        document.getElementById("out").innerHTML = messageInput.value;
+    }
+</script>
+
+</html>
