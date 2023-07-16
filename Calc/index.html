@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" href="../images/apple-touch-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="calculator">
+        <input type="text" id="result" readonly placeholder="Your results here...">
+        <div id="rows">
+            <div id="r1">
+                <button class="b1" onclick="appendNumber(7)">7</button>
+                <button class="b2" onclick="appendNumber(8)">8</button>
+                <button class="b3" onclick="appendNumber(9)">9</button>
+                <button class="b4" onclick="Setoperator('+')">+</button>
+            </div>
+            <div id="r2">
+                <button class="b5" onclick="appendNumber(4)">4</button>
+                <button class="b6" onclick="appendNumber(5)">5</button>
+                <button class="b7" onclick="appendNumber(6)">6</button>
+                <button class="b8" onclick="Setoperator('-')">-</button>
+            </div>
+            <div id="r3">
+                <button class="b9" onclick="appendNumber(1)">1</button>
+                <button class="b10" onclick="appendNumber(2)">2</button>
+                <button class="b11" onclick="appendNumber(3)">3</button>
+                <button class="b12" onclick="Setoperator('*')">*</button>
+            </div>
+            <div id="r4">
+                <button class="b13" onclick="appendNumber(0)">0</button>
+                <button class="b14" onclick="clearresult('C')">C</button>
+                <button class="b15" onclick="calculate('=')">=</button>
+                <button class="b16" onclick="Setoperator('/')">/</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
