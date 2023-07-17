@@ -43,5 +43,6 @@ function clearresult() {
     firstNumber = '';
     secondNumber = '';
     document.getElementById('result').style.backgroundColor="white";
+    document.getElementById('result').value = "";
     
 }
