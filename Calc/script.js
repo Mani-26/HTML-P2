@@ -33,16 +33,15 @@ function calculate() {
             break;
     }
     document.getElementById('result').value = result;
+    document.getElementById('result').style.backgroundColor="lime";
     secondNumber = "";
     operator = '';
     firstNumber = '';
-    const res = document.querySelector("#result");
-  res.classList.add("resultCol");
 }
 function clearresult() {
     operator = '';
     firstNumber = '';
     secondNumber = '';
-    document.getElementById('result').value = '';
+    document.getElementById('result').style.backgroundColor="white";
     
 }

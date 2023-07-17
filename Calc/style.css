@@ -127,11 +127,6 @@ button:active {
     animation: changeColor 2s infinite;
 }
 
-.resultCol {
-    animation: changeColor 2s infinite;
-    font-size: 30px;
-}
-
 
 @keyframes changeColor {
     0% {
